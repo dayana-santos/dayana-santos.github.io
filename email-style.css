@@ -1,0 +1,202 @@
+
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	color: #6D6D6D;
+	}
+
+header {
+	display: flex;
+	width: 100%;
+	background-color: #F4A3B2;
+	justify-content: center;
+}
+
+.banner {
+	width: 500px;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2em;
+}
+
+.logo {
+	padding: 0;
+	justify-content: flex-start;
+}
+
+.image-donut {
+	padding: 0;
+	float: right;
+	justify-content: flex-end;
+}
+
+
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+section {
+	width: 500px;
+	padding: 0 2em;
+	background-color: #FFFEFC;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #6D6D6D;
+}
+
+button, .button {
+	font-family: 'Open Sans', sans-serif;
+	height: 56px;
+	width: 80%;
+	border-radius: 32px;
+	border: none;
+	color: white;
+	background-color: #CF2762;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+
+.button-center {
+	padding: 2em 0;
+	text-align: center;
+}
+
+button:hover {
+	background-color: #F22E73;
+}
+
+.button:hover {
+	background-color: #F22E73;
+}
+
+button:active {
+	background-color: #AD2152;
+}
+
+.button:active {
+	background-color: #AD2152;
+}
+
+hr {
+	color: lightgray;
+	border-width: 1px;
+	margin: 0;
+	margin: 1em 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li p {
+	font-size: 16px;
+	margin: 8px;
+}
+
+.cheers {
+	padding: 2em 0;
+}
+
+.cheers p {
+	margin: 8px;
+}
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	background-color: #F4A3B2;
+}
+
+.content-footer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.texto-footer {
+	width: 500px;
+	padding: 2em 0 0 0;
+}
+
+.texto-footer p {
+	color: white;
+	font-size: 12px;
+}
+
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 0 0 3em 0;
+}
+
+footer ul li {
+	padding: 0 0.5em;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+h5 {
+	margin: 0;
+}
+
+
+/*---------CSS RESPONSIVO---------*/
+
+
+@media screen and (max-width: 500px) {
+
+	.banner, section, .texto-footer, div ul {
+		width: 400px;
+	}
+
+	.content-footer {
+		text-align: left;
+	}
+
+	footer ul {
+		display: inline-block;
+	}
+
+	footer ul li {
+		padding: 0.3em 0;
+	}
+
+}
